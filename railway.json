@@ -1,0 +1,15 @@
+{
+  "build": {
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "Dockerfile"
+  },
+  "deploy": {
+    "startCommand": "python server.py",
+    "ports": [
+      {
+        "port": 50051,
+        "protocol": "TCP"
+      }
+    ]
+  }
+}
